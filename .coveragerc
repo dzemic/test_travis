@@ -1,0 +1,16 @@
+[paths]
+source =
+   src/test_travis
+   */site-packages/test_travis
+
+[run]
+branch = true
+source =
+    test_travis
+    tests
+parallel = true
+
+[report]
+show_missing = true
+precision = 2
+omit = *migrations*
