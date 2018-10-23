@@ -19,7 +19,7 @@ matrix:
       - python: 3.5
         env: TOXENV=flake8
 
-script: tox
+script: "python setup.py develop && nosetests -w tests/"
 
 install:
     - pip install tox
